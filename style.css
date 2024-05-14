@@ -1,6 +1,6 @@
 html {
-    text-align: center;
     font-family: monospace;
+    background-color: azure;
 }
 
 .thirds {
@@ -10,8 +10,15 @@ html {
 
 .thirds .third {
     flex: 1;
+    text-align: center;
+    padding-top: 2%;
     background-color: azure;
-    border: solid black;
+}
+
+.thirds .third .project-info {
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 27%;
 }
 
 #calc {
@@ -68,26 +75,58 @@ button {
     background-color: #DAF7A6;    
 }
 
+.operator:hover {
+    background-color: #C1E1C1;
+}
+
 .equals {
     background-color: #DAF7A6;
 }
 
+.equals:hover {
+    background-color: #C1E1C1;
+}
+
 .operand {
-    background-color: cyan;
+    background-color: #7DF9FF;
+}
+
+.operand:hover {
+    background-color: #00FFFF;
 }
 
 .decimal {
-    background-color: cyan;
+    background-color: #7DF9FF;
+}
+
+.decimal:hover {
+    background-color: #00FFFF;
 }
 
 .clear {
     background-color: dodgerblue;
 }
 
+.clear:hover {
+    background-color: #89CFF0;
+}
+
+.clear:hover {
+    background-color: #89CFF0;
+}
+
 .sign {
     background-color: dodgerblue;
 }
 
+.sign:hover {
+    background-color: #89CFF0;
+}
+
 .percent {
     background-color: dodgerblue;
+}
+
+.percent:hover {
+    background-color: #89CFF0;
 }
