@@ -1,4 +1,5 @@
 let displayVal = '0';
+const resultDisplay = document.querySelector(".result")
 
 function display() {
     display = document.getElementById('display');
@@ -9,3 +10,19 @@ function display() {
 }
 
 display();
+
+function doOperation(a, b, operation) {
+    if (operation === '+') {
+        return a + b;
+    } else if (operation === '-') {
+        return a - b;
+    } else if (operation === '*') {
+        return a * b;
+    } else if (operation === '/') {
+        if (b === 0) {
+            return 'Invalid Response';
+        } else {
+            return a / b
+        }
+    }
+}
