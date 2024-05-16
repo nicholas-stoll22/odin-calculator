@@ -6,6 +6,7 @@ html {
 .thirds {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .thirds .third {
@@ -21,8 +22,17 @@ html {
     padding-left: 27%;
 }
 
+#left-third {
+    flex: 0 0 500px;
+}
+
+#right-third {
+    flex: 0 0 500px;
+}
+
 #calc {
     display: flex;
+    flex: 1 1 300px;
     min-height: 95vh;
     justify-content: center;
     align-content: center;
