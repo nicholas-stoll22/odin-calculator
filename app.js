@@ -1,5 +1,6 @@
 let displayVal = '0';
-const resultDisplay = document.querySelector(".result")
+const resultDisplay = document.querySelector('.result')
+const buttonArr = document.querySelectorAll('button')
 
 function display() {
     display = document.getElementById('display');
@@ -26,3 +27,13 @@ function doOperation(a, b, operation) {
         }
     }
 }
+
+function buttonPush() {
+    for (let i =0; i < buttonArr.length; i++) {
+        buttonArr[i].addEventListener('click', function () {
+            console.log('works')
+        })
+    }
+}
+
+buttonPush();
