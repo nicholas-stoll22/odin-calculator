@@ -1,16 +1,20 @@
-let displayVal = '0';
+let displayVal = '3';
+let buttonA = null;
+let buttonB = null;
+let operation = null;
+
 const resultDisplay = document.querySelector('.result')
 const buttonArr = document.querySelectorAll('button')
 
-function display() {
-    display = document.getElementById('display');
+function changeDisplay() {
+    const display = document.getElementById('display');
     display.innerText = displayVal;
     if (displayVal.length > 9) {
         display.innerText = displayVal.substring(0,9);
     }
 }
 
-display();
+changeDisplay();
 
 function doOperation(a, b, operation) {
     if (operation === '+') {
@@ -31,7 +35,8 @@ function doOperation(a, b, operation) {
 function buttonPush() {
     for (let i =0; i < buttonArr.length; i++) {
         buttonArr[i].addEventListener('click', function () {
-            console.log('works')
+            displayVal = buttonArr[i].value
+            changeDisplay()
         })
     }
 }
